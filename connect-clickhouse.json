@@ -1,0 +1,20 @@
+{
+  "connector.class": "com.clickhouse.kafka.connect.ClickHouseSinkConnector",
+  "tasks.max": "1",
+  "consumer.override.max.poll.records": "5000",
+  "consumer.override.max.partition.fetch.bytes": "5242880",
+  "database": "lightning",
+  "errors.retry.timeout": "60",
+  "exactlyOnce": "false",
+  "hostname": "localhost",
+  "port": "8123",
+  "ssl": "false",
+  "username": "default",
+  "password": "",
+  "topics": "lightning_district",
+  "topic2TableMap": "lightning_district=strike",
+  "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+  "value.converter.schemas.enable": "false",
+  "schemas.enable": "false",
+  "clickhouseSettings": ""
+}
